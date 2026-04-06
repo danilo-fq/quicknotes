@@ -1,0 +1,11 @@
+version: '3.8'
+services:
+  db:
+    image: mysql:8
+    container_name: quicknotes_mysql_db
+    restart: always
+    environment:
+      - MYSQL_DATABASE=$MYSQL_DATABASE
+      - MYSQL_ROOT_PASSWORD=$MYSQL_PASSWORD
+      - MYSQL_USER=$MYSQL_USER
+      - MYSQL_PASSWORD=$MYSQL_PASSWORD
